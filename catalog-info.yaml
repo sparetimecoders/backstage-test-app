@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-test
+  description: Website for buying cars
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    buildkite.com/project-slug: sparetimecoders/buildtools-example
+    sonarqube.org/project-key: smart_browserstack_test_automation
+
+spec:
+  type: website
+  owner: peter@stcab.io
+  lifecycle: production
+  consumesApis:
+    - price-api
